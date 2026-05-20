@@ -43,6 +43,30 @@ h2{margin-top:0}
 ol,ul{margin-left:1.2rem}
 .site-footer{padding:22px 0;margin-top:28px;color:var(--muted);font-size:14px}
 
+/* Chemicals Grid */
+.chem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:16px 0}
+.chem-card{background:linear-gradient(180deg,var(--card),#fbfdff);padding:16px;border-radius:12px;box-shadow:0 8px 24px rgba(11,17,32,0.04)}
+.chem-card h4{margin-top:0;color:var(--accent)}
+
+/* Timeline */
+.timeline{display:flex;flex-direction:column;gap:12px;margin:16px 0}
+.timeline-item{display:flex;gap:16px;padding:12px;background:linear-gradient(90deg,#f8fafc,#f3f4f6);border-radius:10px;border-left:3px solid var(--accent)}
+.timeline-marker{font-weight:700;color:var(--accent);min-width:100px;font-size:13px}
+.timeline-item p{margin:0;font-size:14px}
+
+/* Disease Grid */
+.disease-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:16px 0}
+.disease-card{background:linear-gradient(180deg,var(--card),#fbfdff);padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(11,17,32,0.04);border-top:3px solid var(--accent-2)}
+.disease-card h3{margin-top:0;font-size:16px}
+.disease-card p{font-size:14px;color:#374151}
+
+/* Myth Grid */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:16px 0}
+.myth-card{background:linear-gradient(180deg,#fff5f5,#ffe7e7);padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(214,69,69,0.08);border-left:3px solid var(--danger)}
+.myth-card h3{margin-top:0;font-size:15px;color:var(--danger)}
+.myth-card p{margin-bottom:0;font-size:14px}
+
+
 /* Modal */
 .modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(6,11,25,0.45);padding:24px;visibility:hidden;opacity:0;transition:all .22s}
 .modal[aria-hidden="false"]{visibility:visible;opacity:1}
