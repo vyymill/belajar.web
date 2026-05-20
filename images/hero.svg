@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Ilustrasi bahaya merokok">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffdede" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="20" fill="#fff"/>
+  <rect x="0" y="0" width="800" height="500" rx="20" fill="url(#g1)"/>
+
+  <!-- stylized cigarette -->
+  <g transform="translate(120,180)">
+    <rect x="0" y="40" width="420" height="26" rx="12" fill="#f4f4f5" stroke="#e6e6e9"/>
+    <rect x="380" y="40" width="60" height="26" rx="12" fill="#ffb4a2"/>
+    <g transform="translate(456,36)">
+      <path d="M0 0 C10 -10, 30 -30, 40 -50" stroke="#b8c2cc" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M12 6 C22 -4, 42 -24, 60 -44" stroke="#cbd5e1" stroke-width="6" fill="none" stroke-linecap="round"/>
+    </g>
+    <circle cx="60" cy="53" r="6" fill="#ffdede"/>
+  </g>
+
+  <!-- red cross overlay -->
+  <g transform="translate(420,40)">
+    <rect x="0" y="0" width="200" height="200" rx="12" fill="#fff" opacity="0"/>
+    <path d="M30 80 L170 80 M100 10 L100 170" stroke="#ff4d4f" stroke-width="22" stroke-linecap="round"/>
+  </g>
+
+  <text x="48" y="60" font-family="Poppins, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Hentikan Merokok</text>
+  <text x="48" y="96" font-family="Poppins, sans-serif" font-size="16" fill="#374151">Mulai langkah kecil hari ini untuk hidup lebih sehat.</text>
+</svg>

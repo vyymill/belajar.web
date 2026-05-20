@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Bahaya Merokok</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/favicon.svg">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<h1>Bahaya Merokok</h1>
+			<p class="tagline">Fakta, dampak kesehatan, dan cara berhenti untuk hidup lebih sehat.</p>
+			<div class="actions">
+				<button id="start-quiz" class="btn">Tes Pengetahuan</button>
+				<a class="btn ghost" href="#resources">Sumber & Bantuan</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="container">
+		<section id="hero" class="hero">
+			<div class="hero-inner">
+				<div class="hero-text">
+					<h2>Mengapa merokok berbahaya?</h2>
+					<p>Rokok mengandung lebih dari 7.000 bahan kimia, ratusan di antaranya beracun dan puluhan bersifat karsinogen (penyebab kanker). Merokok meningkatkan risiko penyakit jantung, stroke, penyakit paru-paru, dan banyak masalah kesehatan lainnya.</p>
+					<a class="btn" href="#tips">Mulai Berhenti</a>
+				</div>
+				<figure class="hero-figure">
+					<img src="images/hero.svg" alt="Ilustrasi bahaya merokok">
+				</figure>
+			</div>
+		</section>
+
+		<section id="stats" class="grid">
+			<article class="card">
+				<h3>Angka Global</h3>
+				<p>Setiap tahun, jutaan orang meninggal karena penyakit yang berhubungan dengan merokok.</p>
+			</article>
+			<article class="card">
+				<h3>Penyakit</h3>
+				<p>Merokok meningkatkan risiko kanker paru-paru, penyakit jantung, COPD, dan komplikasi kehamilan.</p>
+			</article>
+			<article class="card">
+				<h3>Manfaat Berhenti</h3>
+				<p>Berkurangnya risiko serangan jantung dalam tahun pertama dan perbaikan fungsi paru-paru seiring waktu.</p>
+			</article>
+		</section>
+
+		<section id="effects">
+			<h2>Dampak Kesehatan Utama</h2>
+			<ul class="effects-list">
+				<li><strong>Kanker:</strong> Risiko kanker paru-paru dan banyak jenis kanker lain meningkat.</li>
+				<li><strong>Jantung:</strong> Penyakit jantung koroner, serangan jantung, dan stroke lebih mungkin terjadi.</li>
+				<li><strong>Paru-paru:</strong> Bronkitis kronis, emfisema, dan gangguan pernapasan.</li>
+				<li><strong>Kehamilan:</strong> Komplikasi, bayi dengan berat lahir rendah, dan risiko lahir mati.</li>
+			</ul>
+		</section>
+
+		<section id="benefits">
+			<h2>Keuntungan setelah Berhenti</h2>
+			<ol>
+				<li>Setelah 20 menit: Detak jantung turun ke normal.</li>
+				<li>Setelah 1 tahun: Risiko penyakit jantung berkurang setengahnya dibanding perokok.</li>
+				<li>Dalam 5–15 tahun: Risiko stroke dan banyak kanker menurun signifikan.</li>
+			</ol>
+		</section>
+
+		<section id="tips">
+			<h2>Tips untuk Berhenti</h2>
+			<ul>
+				<li>Tetapkan tanggal berhenti dan buat rencana sederhana.</li>
+				<li>Gunakan dukungan profesional—konseling atau layanan berhenti merokok.</li>
+				<li>Pertimbangkan terapi pengganti nikotin atau obat yang diresepkan dokter.</li>
+				<li>Hindari pemicu dan ganti kebiasaan dengan aktivitas sehat.</li>
+			</ul>
+		</section>
+
+		<section id="quiz" class="quiz-section">
+			<h2>Mini Kuiz</h2>
+			<p>Uji pengetahuan cepat Anda tentang bahaya merokok.</p>
+			<div id="quiz-container" class="quiz">
+				<!-- Quiz rendered by script.js -->
+			</div>
+		</section>
+
+		<section id="resources">
+			<h2>Sumber & Bantuan</h2>
+			<p>Jika Anda atau orang yang Anda kenal ingin berhenti merokok, hubungi layanan kesehatan setempat atau cari dukungan organisasi antirokok di negara Anda.</p>
+			<ul>
+				<li><a href="https://www.who.int/" target="_blank" rel="noopener">WHO</a></li>
+				<li><a href="https://www.cdc.gov/tobacco/quit_smoking/index.htm" target="_blank" rel="noopener">CDC - Quit Smoking</a></li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>Halaman edukasi ini dibuat untuk memberi informasi umum dan bukan pengganti nasihat medis profesional.</p>
+			<p>&copy; 2026 — Edukasi Kesehatan</p>
+		</div>
+	</footer>
+
+	<div id="modal" class="modal" aria-hidden="true">
+		<div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+			<button id="modal-close" class="modal-close" aria-label="Tutup">✕</button>
+			<div id="modal-content"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
