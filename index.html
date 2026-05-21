@@ -10,13 +10,15 @@
 </head>
 <body>
 	<header class="site-header">
-		<div class="container">
-			<h1>Bahaya Merokok</h1>
-			<p class="tagline">Fakta, dampak kesehatan, dan cara berhenti untuk hidup lebih sehat.</p>
-			<div class="actions">
-				<button id="start-quiz" class="btn">Tes Pengetahuan</button>
-				<button id="view-progress" class="btn ghost">Lihat Survei</button>
-				<a class="btn ghost" href="#resources">Sumber & Bantuan</a>
+		<div class="container header-inner">
+			<div>
+				<p class="eyebrow">Edukasi Kesehatan</p>
+				<h1>Bahaya Merokok</h1>
+				<p class="tagline">Fakta, dampak kesehatan, dan cara berhenti untuk hidup lebih sehat.</p>
+			</div>
+			<div class="header-actions">
+				<button id="view-progress" class="btn ghost">Lihat Kisah</button>
+				<a class="btn ghost" href="#resources">Sumber</a>
 			</div>
 		</div>
 	</header>
@@ -25,219 +27,233 @@
 		<section id="hero" class="hero">
 			<div class="hero-inner">
 				<div class="hero-text">
+					<p class="eyebrow">Ayo Berhenti Sekarang</p>
 					<h2>Mengapa merokok berbahaya?</h2>
-					<p>Rokok mengandung lebih dari 7.000 bahan kimia, ratusan di antaranya beracun dan puluhan bersifat karsinogen (penyebab kanker). Merokok meningkatkan risiko penyakit jantung, stroke, penyakit paru-paru, dan banyak masalah kesehatan lainnya.</p>
-					<a class="btn" href="#tips">Mulai Berhenti</a>
+					<p>Rokok mengandung lebih dari 7.000 bahan kimia berbahaya. Merokok meningkatkan risiko penyakit jantung, stroke, kanker, dan mempengaruhi orang di sekitar Anda.</p>
+					<div class="hero-cta">
+						<a class="btn btn-primary" href="#tips">Mulai Berhenti</a>
+						<button id="start-quiz" class="btn btn-secondary">Coba Kuis</button>
+					</div>
 				</div>
-				<figure class="hero-figure">
+				<figure class="hero-figure" aria-hidden="true">
 					<img src="images/hero.svg" alt="Ilustrasi bahaya merokok" loading="lazy">
 				</figure>
 			</div>
 		</section>
 
-		<section id="stats" class="grid">
+		<section id="stats" class="stats-grid">
 			<article class="card">
 				<h3>Angka Global</h3>
-        <p><strong>8 juta orang</strong> meninggal setiap tahun akibat merokok dan paparan asap rokok. Di Indonesia, jutaan orang sudah kecanduan nikotin.</p>
-      </article>
-      <article class="card">
-        <h3>Penyakit</h3>
-        <p>Merokok meningkatkan risiko hingga <strong>15+ penyakit serius</strong>: kanker (paru, mulut, tenggorokan, kandung kemih), penyakit jantung, stroke, COPD, diabetes, dan lainnya.</p>
-      </article>
-      <article class="card">
-        <h3>Manfaat Berhenti</h3>
-        <p>Dalam <strong>1 jam pertama</strong> detak jantung stabil, dalam <strong>5 tahun</strong> risiko kanker paru turun 50%, dan dalam <strong>10 tahun</strong> risiko kanker paru sama dengan orang tidak merokok.</p>
-      </article>
-    </section>
-    <section id="chart" class="chart-section">
-      <div class="card">
-        <h2>Persentase Perokok Dewasa per Negara</h2>
-        <p>Perbandingan prevalensi perokok dewasa di beberapa negara untuk menunjukkan tingkat kecanduan rokok.</p>
-        <div class="chart-list">
-          <div class="bar-item">
-            <div class="bar-label"><span>Indonesia</span><span>34%</span></div>
-            <div class="bar-track"><div class="bar-fill fill-indo" style="width:34%">34%</div></div>
-          </div>
-          <div class="bar-item">
-            <div class="bar-label"><span>Russia</span><span>28%</span></div>
-            <div class="bar-track"><div class="bar-fill fill-rus" style="width:28%">28%</div></div>
-          </div>
-          <div class="bar-item">
-            <div class="bar-label"><span>China</span><span>26%</span></div>
-            <div class="bar-track"><div class="bar-fill fill-chn" style="width:26%">26%</div></div>
-          </div>
-          <div class="bar-item">
-            <div class="bar-label"><span>Greece</span><span>27%</span></div>
-            <div class="bar-track"><div class="bar-fill fill-grc" style="width:27%">27%</div></div>
-          </div>
-          <div class="bar-item">
-            <div class="bar-label"><span>USA</span><span>14%</span></div>
-            <div class="bar-track"><div class="bar-fill fill-usa" style="width:14%">14%</div></div>
-          </div>
-        </div>
-        <p class="chart-note">Sumber data disertakan sebagai ilustrasi umum prevalensi perokok dewasa.</p>
-      </div>
-    </section>
-    <section id="chemicals">
-      <h2>Bahan Kimia Berbahaya dalam Rokok</h2>
-      <p>Rokok mengandung lebih dari 7.000 bahan kimia. Berikut beberapa yang paling berbahaya:</p>
-      <div class="chem-grid">
-        <div class="chem-card">
-          <h4>Nikotin</h4>
-          <p>Zat adiktif utama yang membuat Anda kecanduan dalam waktu singkat. Meningkatkan detak jantung dan tekanan darah.</p>
-        </div>
-        <div class="chem-card">
-          <h4>Tar</h4>
-          <p>Residu lengket yang menumpuk di paru-paru dan saluran pernapasan. Menyebabkan kanker dan penyakit paru kronis.</p>
-        </div>
-        <div class="chem-card">
-          <h4>Karbon Monoksida (CO)</h4>
-          <p>Gas beracun yang menggantikan oksigen dalam darah. Mengurangi pasokan oksigen ke jantung dan otak.</p>
-        </div>
-        <div class="chem-card">
-          <h4>Benzene</h4>
-          <p>Zat karsinogenik yang dikenal menyebabkan kanker darah dan masalah sistem kekebalan tubuh.</p>
-        </div>
-        <div class="chem-card">
-          <h4>Polonium-210</h4>
-          <p>Elemen radioaktif yang menumpuk di paru-paru perokok dan dapat menyebabkan kanker paru-paru.</p>
-        </div>
-        <div class="chem-card">
-          <h4>Arsen</h4>
-          <p>Racun yang dapat menyebabkan keracunan kronis dan meningkatkan risiko kanker.</p>
-        </div>
-      </div>
-    </section>
+				<p><strong>8 juta orang</strong> meninggal setiap tahun akibat merokok dan paparan asap rokok. Di Indonesia, jutaan orang sudah kecanduan nikotin.</p>
+			</article>
+			<article class="card">
+				<h3>Penyakit</h3>
+				<p>Merokok meningkatkan risiko hingga <strong>15+ penyakit serius</strong>, termasuk kanker, penyakit jantung, stroke, dan gangguan pernapasan.</p>
+			</article>
+			<article class="card">
+				<h3>Manfaat Berhenti</h3>
+				<p>Dalam <strong>20 menit</strong> detak jantung turun; dalam <strong>5 tahun</strong> risiko kanker paru turun; dalam <strong>10 tahun</strong> kesehatan meningkat signifikan.</p>
+			</article>
+		</section>
 
-    <section id="timeline">
-      <h2>Timeline Pemulihan Setelah Berhenti Merokok</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker">20 menit</div>
-          <p><strong>Detak jantung dan tekanan darah menurun.</strong> Tubuh mulai memulihkan diri.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">2 jam</div>
-          <p><strong>Nikotin mulai keluar dari tubuh.</strong> Kemungkinan mulai merasa gelisah atau lapar.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">8 jam</div>
-          <p><strong>Kadar oksigen dalam darah kembali normal.</strong> Anda mulai merasa lebih baik.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">24 jam</div>
-          <p><strong>Risiko serangan jantung menurun.</strong> Paru-paru mulai membersihkan diri dari tar dan asap.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">3 hari</div>
-          <p><strong>Nikotin sepenuhnya keluar dari tubuh.</strong> Gejala putus asap bisa mencapai puncaknya (gelisah, sulit tidur, nafsu makan berubah).</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">1 minggu</div>
-          <p><strong>Penciuman dan pengecapan mulai meningkat.</strong> Kapasitas olahraga meningkat.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">2-3 minggu</div>
-          <p><strong>Gejala putus asap mulai berkurang.</strong> Paru-paru terus melakukan detoksifikasi.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">1 bulan</div>
-          <p><strong>Kulit berubah lebih sehat dan bercahaya.</strong> Energi meningkat signifikan.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">3 bulan</div>
-          <p><strong>Fungsi paru-paru meningkat 30%.</strong> Sirkulasi darah membaik, olahraga terasa lebih mudah.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">1 tahun</div>
-          <p><strong>Risiko penyakit jantung berkurang 50%.</strong> Tubuh terus pulih dan berfungsi lebih optimal.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">5 tahun</div>
-          <p><strong>Risiko kanker paru turun 50%.</strong> Risiko penyakit jantung setara dengan orang tidak merokok.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker">10 tahun</div>
-          <p><strong>Risiko kanker paru sama dengan orang tidak pernah merokok.</strong> Kesehatan secara keseluruhan drastis membaik.</p>
-        </div>
-      </div>
-    </section>
+		<section id="chart" class="chart-section">
+			<div class="card">
+				<h2>Persentase Perokok Dewasa per Negara</h2>
+				<p>Perbandingan prevalensi perokok dewasa untuk menunjukkan tingkat kecanduan rokok.</p>
+				<div class="chart-list">
+					<div class="bar-item">
+						<div class="bar-label"><span>Indonesia</span><span>34%</span></div>
+						<div class="bar-track"><div class="bar-fill fill-indo" style="width:34%" aria-hidden="true">34%</div></div>
+					</div>
+					<div class="bar-item">
+						<div class="bar-label"><span>Russia</span><span>28%</span></div>
+						<div class="bar-track"><div class="bar-fill fill-rus" style="width:28%" aria-hidden="true">28%</div></div>
+					</div>
+					<div class="bar-item">
+						<div class="bar-label"><span>China</span><span>26%</span></div>
+						<div class="bar-track"><div class="bar-fill fill-chn" style="width:26%" aria-hidden="true">26%</div></div>
+					</div>
+					<div class="bar-item">
+						<div class="bar-label"><span>Greece</span><span>27%</span></div>
+						<div class="bar-track"><div class="bar-fill fill-grc" style="width:27%" aria-hidden="true">27%</div></div>
+					</div>
+					<div class="bar-item">
+						<div class="bar-label"><span>USA</span><span>14%</span></div>
+						<div class="bar-track"><div class="bar-fill fill-usa" style="width:14%" aria-hidden="true">14%</div></div>
+					</div>
+				</div>
+				<p class="chart-note">Sumber data disertakan sebagai ilustrasi umum prevalensi perokok dewasa.</p>
+			</div>
+		</section>
 
-    <section id="diseases">
-      <h2>Penyakit yang Disebabkan Merokok</h2>
-      <div class="disease-grid">
-        <article class="disease-card">
-          <h3>Kanker Paru-paru</h3>
-          <p>Perokok 15-30x lebih berisiko. Sebagian besar kematian kanker paru disebabkan merokok. Gejala: batuk terus-menerus, nyeri dada, sesak napas.</p>
-        </article>
-        <article class="disease-card">
-          <h3>Penyakit Jantung Koroner</h3>
-          <p>Rokok merusak lapisan dalam pembuluh darah. Meningkatkan pembekuan darah dan mengurangi oksigen ke jantung. Bisa berakibat serangan jantung fatal.</p>
-        </article>
-        <article class="disease-card">
-          <h3>Stroke</h3>
-          <p>Merokok membuat darah kental dan meningkatkan risiko bekuan. Stroke dapat menyebabkan kelemahan, paralisis, atau kematian.</p>
-        </article>
-        <article class="disease-card">
-          <h3>COPD (Penyakit Paru Obstruktif Kronis)</h3>
-          <p>Kombinasi emfisema dan bronkitis kronis. Kesulitan bernapas permanen, batuk kronis. 90% kasus COPD disebabkan merokok.</p>
-        </article>
-        <article class="disease-card">
-          <h3>Kanker Mulut & Tenggorokan</h3>
-          <p>Asap rokok merusak jaringan di mulut, lidah, dan tenggorokan. Gejala: luka tidak sembuh, sulit menelan, suara serak.</p>
-        </article>
-        <article class="disease-card">
-          <h3>Diabetes Tipe 2</h3>
-          <p>Merokok meningkatkan risiko diabetes hingga 50%. Nikotin mengurangi sensitivitas insulin dan efektivitas tubuh mengatur gula darah.</p>
-        </article>
-        <article class="disease-card">
-          <h3>Osteoporosis</h3>
-          <p>Nikotin mengurangi penyerapan kalsium. Tulang menjadi rapuh dan rentan patah, terutama pada wanita pascamenopause.</p>
-        </article>
-        <article class="disease-card">
-          <h3>Mata (Age-Related Macular Degeneration)</h3>
-          <p>Perokok 2x lebih berisiko kehilangan penglihatan akibat degenerasi makula. Katarak juga lebih mungkin terjadi.</p>
-        </article>
-      </div>
-    </section>
+		<section id="chemicals">
+			<h2>Bahan Kimia Berbahaya dalam Rokok</h2>
+			<p>Rokok mengandung lebih dari 7.000 bahan kimia. Berikut beberapa yang paling berbahaya:</p>
+			<div class="chem-grid">
+				<div class="chem-card">
+					<h4>Nikotin</h4>
+					<p>Zat adiktif utama yang membuat Anda kecanduan. Meningkatkan detak jantung dan tekanan darah.</p>
+				</div>
+				<div class="chem-card">
+					<h4>Tar</h4>
+					<p>Residu lengket yang menumpuk di paru-paru dan saluran pernapasan. Penyebab kanker dan penyakit paru kronis.</p>
+				</div>
+				<div class="chem-card">
+					<h4>Karbon Monoksida</h4>
+					<p>Gas beracun yang menggantikan oksigen dalam darah, mengurangi aliran oksigen ke jantung dan otak.</p>
+				</div>
+				<div class="chem-card">
+					<h4>Benzene</h4>
+					<p>Zat karsinogenik yang dapat menyebabkan kanker darah dan melemahkan sistem imun.</p>
+				</div>
+				<div class="chem-card">
+					<h4>Polonium-210</h4>
+					<p>Elemen radioaktif yang menumpuk di paru-paru dan dapat menyebabkan kanker.</p>
+				</div>
+				<div class="chem-card">
+					<h4>Arsen</h4>
+					<p>Racun kronis yang meningkatkan risiko kanker dan gangguan sistem saraf.</p>
+				</div>
+			</div>
+		</section>
 
-    <section id="secondhand-smoke">
-      <h2>Efek Asap Rokok pada Orang Lain (Secondhand Smoke)</h2>
-      <p>Asap rokok tidak hanya merugikan perokok, tetapi juga orang di sekitarnya:</p>
-      <ul>
-        <li><strong>Anak-anak:</strong> Penyakit telinga tengah, asma, infeksi paru-paru, sindrom kematian bayi mendadak (SIDS).</li>
-        <li><strong>Dewasa yang tidak merokok:</strong> Penyakit jantung, stroke, kanker paru-paru (risiko 20-30%).</li>
-        <li><strong>Kehamilan:</strong> Bayi lahir dengan berat rendah, cacat lahir, keguguran.</li>
-        <li><strong>Tidak ada tingkat paparan "aman".</strong> Bahkan paparan singkat bisa merusak jantung dan pembuluh darah.</li>
-      </ul>
-    </section>
+		<section id="timeline" class="timeline-section">
+			<h2>Timeline Pemulihan Setelah Berhenti Merokok</h2>
+			<p class="section-intro">Empat fase pemulihan yang membantu Anda melihat manfaat tanpa daftar panjang.</p>
+			<div class="timeline-cards">
+				<article class="timeline-card">
+					<span class="timeline-phase">Fase 1</span>
+					<h3>20 menit - 24 jam</h3>
+					<ul>
+						<li>Detak jantung dan tekanan darah menurun.</li>
+						<li>Nikotin mulai keluar dari tubuh.</li>
+						<li>Risiko serangan jantung menurun.</li>
+					</ul>
+				</article>
+				<article class="timeline-card">
+					<span class="timeline-phase">Fase 2</span>
+					<h3>3 hari - 1 minggu</h3>
+					<ul>
+						<li>Oksigen dalam darah kembali normal.</li>
+						<li>Penciuman dan pengecapan meningkat.</li>
+						<li>Gejala putus asap puncak.</li>
+					</ul>
+				</article>
+				<article class="timeline-card">
+					<span class="timeline-phase">Fase 3</span>
+					<h3>2 minggu - 3 bulan</h3>
+					<ul>
+						<li>Fungsi paru meningkat hingga 30%.</li>
+						<li>Sirkulasi darah membaik.</li>
+						<li>Napase menjadi lebih ringan.</li>
+					</ul>
+				</article>
+				<article class="timeline-card">
+					<span class="timeline-phase">Fase 4</span>
+					<h3>1 tahun - 10 tahun</h3>
+					<ul>
+						<li>Risiko penyakit jantung turun hingga 50%.</li>
+						<li>Risiko kanker paru turun tajam.</li>
+						<li>Kesehatan mendekati orang yang tidak merokok.</li>
+					</ul>
+				</article>
+			</div>
+		</section>
 
-    <section id="myths">
-      <h2>Mitos vs Fakta tentang Merokok</h2>
-      <div class="myth-grid">
-        <div class="myth-card">
-          <h3>❌ Mitos: "Rokok Ringan Aman"</h3>
-          <p><strong>Fakta:</strong> Tidak ada rokok yang aman. Rokok ringan tetap mengandung tar dan nikotin berbahaya.</p>
-        </div>
-        <div class="myth-card">
-          <h3>❌ Mitos: "E-Cigarette 100% Aman"</h3>
-          <p><strong>Fakta:</strong> Vape mengandung zat kimia berbahaya dan nikotin. Belum cukup penelitian jangka panjang.</p>
-        </div>
-        <div class="myth-card">
-          <h3>❌ Mitos: "Saya Sudah Merokok Lama, Tidak Ada Gunanya Berhenti"</h3>
-          <p><strong>Fakta:</strong> Tubuh mulai pulih dalam hitungan menit setelah berhenti. Manfaat terus bertambah seiring waktu.</p>
-        </div>
-        <div class="myth-card">
-          <h3>❌ Mitos: "Olahraga Bisa Menetralisir Efek Merokok"</h3>
-          <p><strong>Fakta:</strong> Olahraga bermanfaat, tetapi tidak bisa menghapus kerusakan rokok. Berhenti merokok lebih penting.</p>
-        </div>
-      </div>
+		<section id="diseases">
+			<h2>Penyakit yang Disebabkan Merokok</h2>
+			<p>Buka daftar singkat untuk membaca lebih lanjut tanpa harus menggulir terlalu jauh.</p>
+			<details class="disease-panel">
+				<summary>8 penyakit utama akibat rokok</summary>
+				<div class="disease-grid">
+					<article class="disease-card">
+						<h3>Kanker Paru-paru</h3>
+						<p>Perokok 15-30x lebih berisiko. Sebagian besar kematian kanker paru disebabkan merokok.</p>
+					</article>
+					<article class="disease-card">
+						<h3>Penyakit Jantung Koroner</h3>
+						<p>Merokok merusak pembuluh darah, meningkatkan pembekuan darah, dan mengurangi oksigen ke jantung.</p>
+					</article>
+					<article class="disease-card">
+						<h3>Stroke</h3>
+						<p>Meningkatkan risiko bekuan darah yang dapat menyebabkan kelumpuhan atau kematian.</p>
+					</article>
+					<article class="disease-card">
+						<h3>COPD</h3>
+						<p>Emfisema dan bronkitis kronis menyebabkan batuk persisten dan kesulitan bernapas.</p>
+					</article>
+					<article class="disease-card">
+						<h3>Kanker Mulut & Tenggorokan</h3>
+						<p>Asap rokok merusak jaringan mulut, lidah, dan tenggorokan, menyebabkan luka dan suara serak.</p>
+					</article>
+					<article class="disease-card">
+						<h3>Diabetes Tipe 2</h3>
+						<p>Merokok meningkatkan risiko diabetes dan mengganggu kontrol gula darah.</p>
+					</article>
+					<article class="disease-card">
+						<h3>Osteoporosis</h3>
+						<p>Nikotin mengganggu penyerapan kalsium, membuat tulang lebih rapuh dan mudah patah.</p>
+					</article>
+					<article class="disease-card">
+						<h3>Degenerasi Makula</h3>
+						<p>Perokok dua kali lebih mungkin kehilangan penglihatan akibat degenerasi makula.</p>
+					</article>
+				</div>
+			</details>
+		</section>
+
+		<section id="secondhand-smoke">
+			<h2>Efek Asap Rokok pada Orang Lain</h2>
+			<p>Asap rokok merugikan orang di sekitar, termasuk anak, dewasa non-perokok, dan ibu hamil.</p>
+			<ul>
+				<li><strong>Anak-anak:</strong> Penyakit telinga, asma, infeksi paru, dan SIDS.</li>
+				<li><strong>Dewasa non-perokok:</strong> Risiko penyakit jantung, stroke, dan kanker meningkat.</li>
+				<li><strong>Kehamilan:</strong> Bayi lahir rendah berat, cacat lahir, dan keguguran.</li>
+			</ul>
+		</section>
+
+		<section id="myths">
+			<h2>Mitos vs Fakta tentang Merokok</h2>
+			<div class="myth-grid">
+				<article class="myth-card myth">
+					<h3>❌ Mitos: Rokok ringan aman</h3>
+					<p>Tidak ada rokok yang aman. Rokok ringan tetap mengandung tar dan nikotin berbahaya.</p>
+				</article>
+				<article class="myth-card fact">
+					<h3>✔️ Fakta: Semua rokok berbahaya</h3>
+					<p>Bahaya tetap ada, bahkan jika mereknya disebut ringan atau halus.</p>
+				</article>
+				<article class="myth-card myth">
+					<h3>❌ Mitos: E-cigarette 100% aman</h3>
+					<p>Vape mengandung zat kimia berbahaya dan nikotin yang masih menimbulkan risiko kesehatan.</p>
+				</article>
+				<article class="myth-card fact">
+					<h3>✔️ Fakta: Vape tidak sepenuhnya aman</h3>
+					<p>Kadar nikotin dan bahan kimia baru masih dapat merusak paru-paru dan jantung.</p>
+				</article>
+				<article class="myth-card myth">
+					<h3>❌ Mitos: Sudah merokok lama, berhenti tidak berguna</h3>
+					<p>Berhenti kapan pun memberi tubuh kesempatan untuk pulih dan mengurangi risiko penyakit.</p>
+				</article>
+				<article class="myth-card fact">
+					<h3>✔️ Fakta: Manfaat berhenti dimulai segera</h3>
+					<p>Risiko kesehatan mulai turun dalam hitungan menit dan terus membaik setiap hari.</p>
+				</article>
+				<article class="myth-card myth">
+					<h3>❌ Mitos: Olahraga bisa menetralisir rokok</h3>
+					<p>Olahraga baik, tetapi tidak menghilangkan kerusakan akibat asap rokok.</p>
+				</article>
+				<article class="myth-card fact">
+					<h3>✔️ Fakta: Berhenti rokok lebih penting</h3>
+					<p>Berhenti merokok adalah langkah paling efektif untuk memperbaiki kesehatan.</p>
+				</article>
+			</div>
 			<h2>Dampak Kesehatan Utama</h2>
 			<ul class="effects-list">
-				<li><strong>Kanker:</strong> Risiko kanker paru-paru dan banyak jenis kanker lain meningkat.</li>
+				<li><strong>Kanker:</strong> Risiko kanker paru-paru dan banyak kanker lain meningkat.</li>
 				<li><strong>Jantung:</strong> Penyakit jantung koroner, serangan jantung, dan stroke lebih mungkin terjadi.</li>
 				<li><strong>Paru-paru:</strong> Bronkitis kronis, emfisema, dan gangguan pernapasan.</li>
-				<li><strong>Kehamilan:</strong> Komplikasi, bayi dengan berat lahir rendah, dan risiko lahir mati.</li>
+				<li><strong>Kehamilan:</strong> Komplikasi, bayi berat lahir rendah, dan risiko lahir mati.</li>
 			</ul>
 		</section>
 
@@ -245,7 +261,7 @@
 			<h2>Keuntungan setelah Berhenti</h2>
 			<ol>
 				<li>Setelah 20 menit: Detak jantung turun ke normal.</li>
-				<li>Setelah 1 tahun: Risiko penyakit jantung berkurang setengahnya dibanding perokok.</li>
+				<li>Setelah 1 tahun: Risiko penyakit jantung berkurang setengahnya.</li>
 				<li>Dalam 5–15 tahun: Risiko stroke dan banyak kanker menurun signifikan.</li>
 			</ol>
 		</section>
@@ -254,8 +270,8 @@
 			<h2>Tips untuk Berhenti</h2>
 			<ul>
 				<li>Tetapkan tanggal berhenti dan buat rencana sederhana.</li>
-				<li>Gunakan dukungan profesional—konseling atau layanan berhenti merokok.</li>
-				<li>Pertimbangkan terapi pengganti nikotin atau obat yang diresepkan dokter.</li>
+				<li>Gunakan dukungan profesional dan layanan berhenti merokok.</li>
+				<li>Pertimbangkan terapi pengganti nikotin jika perlu.</li>
 				<li>Hindari pemicu dan ganti kebiasaan dengan aktivitas sehat.</li>
 			</ul>
 		</section>
@@ -270,7 +286,7 @@
 
 		<section id="resources">
 			<h2>Sumber & Bantuan</h2>
-			<p>Jika Anda atau orang yang Anda kenal ingin berhenti merokok, hubungi layanan kesehatan setempat atau cari dukungan organisasi antirokok di negara Anda.</p>
+			<p>Jika Anda atau orang yang Anda kenal ingin berhenti merokok, hubungi layanan kesehatan setempat atau cari dukungan organisasi antirokok.</p>
 			<ul>
 				<li><a href="https://www.who.int/" target="_blank" rel="noopener">WHO</a></li>
 				<li><a href="https://www.cdc.gov/tobacco/quit_smoking/index.htm" target="_blank" rel="noopener">CDC - Quit Smoking</a></li>
